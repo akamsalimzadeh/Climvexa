@@ -2,4 +2,48 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border: none;
+}
+
+/*  CSS variables  */
+
+:root {
+  
+  /*  fonts   */
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-title: "Bricolage Grotesque", system-ui, sans-serif;
+
+  --fw-light: 300;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /*  Colors  */
+  --body-bg: hsl(243, 96%, 9%);
+  --data-boxes: hsl(243, 23%, 30%);
+  --text-fields: hsl(250, 6%, 84%);
+
+  /*  borders   */
+  --border-sm: 5px;
+  --border-md: 7px;
+  --border-lg: 10px;
+
+  /*  paddings  */
+  --pd-buttons: 7px;
+  --pd-hourlyforecast: 8px;
+  --pd-params-search: 9px;
+  --pd-display: 10px;
+  --pd-dailyforecast: 4px 2px;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-family: var(--font-body);
+  font-weight: var(--fw-light);
+  font-size: 18px;
+}
+
+input,
+button {
+  font-family: inherit;
 }
